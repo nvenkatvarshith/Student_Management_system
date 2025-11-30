@@ -2,11 +2,11 @@ package com.airtribe.studentmanagement.main;
 
 import java.util.Scanner;
 
-import com.airtribe.studentmanagement.Service.CourseService;
-import com.airtribe.studentmanagement.Service.StudentService;
 import com.airtribe.studentmanagement.entity.Course;
 import com.airtribe.studentmanagement.entity.GraduateStudent;
 import com.airtribe.studentmanagement.entity.Student;
+import com.airtribe.studentmanagement.service.CourseService;
+import com.airtribe.studentmanagement.service.StudentService;
 
 //default class - this class can be accessed only in this package
 class Main {

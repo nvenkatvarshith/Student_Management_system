@@ -1,4 +1,4 @@
-package com.airtribe.studentmanagement.Service;
+package com.airtribe.studentmanagement.service;
 
 import java.util.ArrayList;
 import java.util.List;
