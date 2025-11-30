@@ -8,7 +8,9 @@ import com.airtribe.studentmanagement.entity.Course;
 import com.airtribe.studentmanagement.entity.GraduateStudent;
 import com.airtribe.studentmanagement.entity.Student;
 
-public class Main {
+//default class - this class can be accessed only in this package
+class Main {
+    //static - class level - no need to create instance to access this variable
     static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
@@ -17,7 +19,7 @@ public class Main {
         System.out.println("---------------------------------------");
         CourseService courseService = new CourseService();
         StudentService studentService = new StudentService();
-
+        //local variables - they should be initialized
         int option = 0;
         while (true) {
             System.out.println("Select one of the below options ");
@@ -64,7 +66,6 @@ public class Main {
                         default:
                             break;
                     }
-                    System.out.println(studentOption);
                 } while (studentOption != 5);
             } else if (option == 2) {
                 int courseOption = 0;
@@ -130,7 +131,8 @@ public class Main {
 
     public static Student collectStudentDetails() {
         System.out.println("Enter Student Name: ");
-        String name = scanner.next();
+        scanner.nextLine();
+        String name = scanner.nextLine();
         System.out.println("Enter Student Age:");
         int age = scanner.nextInt();
         System.out.println("Enter Student Gender:");
@@ -149,9 +151,10 @@ public class Main {
         String opt = scanner.next();
         if (opt.equals("y")) {
             System.out.println("Enter Student Title:");
-            String title = scanner.next();
+            scanner.nextLine();
+            String title = scanner.nextLine();
             System.out.println("Enter Student Research Paper:");
-            String research = scanner.next();
+            String research = scanner.nextLine();
             return new GraduateStudent(name, age, gender, phoneNo, email, id, program, gpa, title, research);
         } else {
             return new Student(name, age, gender, phoneNo, email, id, program, gpa);
@@ -162,10 +165,12 @@ public class Main {
         System.out.println("Enter course id:");
         int courseId = scanner.nextInt();
         System.out.println("Enter course name");
-        String courseName = scanner.next();
+        scanner.nextLine();
+        String courseName = scanner.nextLine();
         System.out.println("Course technologies");
         System.out.println("Enter number of courses");
         int n = scanner.nextInt();
+        scanner.nextLine();
         String[] courses = new String[n];
         for (int i = 0; i < n; i++) {
             courses[i] = scanner.next();

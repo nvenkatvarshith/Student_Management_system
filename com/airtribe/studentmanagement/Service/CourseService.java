@@ -3,12 +3,13 @@ package com.airtribe.studentmanagement.Service;
 import java.util.ArrayList;
 import java.util.List;
 
+//imports - to access classes of other package in this class
 import com.airtribe.studentmanagement.entity.Course;
 import com.airtribe.studentmanagement.entity.Student;
 
 public class CourseService {
 
-    private static List<Course> courses = new ArrayList<>();
+    private static List<Course> courses = new ArrayList<>(); 
 
     public void addCourse(Course course){
         courses.add(course);

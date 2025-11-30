@@ -1,5 +1,6 @@
 package com.airtribe.studentmanagement.entity;
 
+//multilevel inheritance
 public class GraduateStudent extends Student {
     
     private String title;
@@ -12,7 +13,9 @@ public class GraduateStudent extends Student {
         this.researchTopics = researchTopics;
     }
 
-    public void displayGraduateStudentDetails(){
+    //Method overriding
+    @Override
+    public void displayStudentDetails(){
         super.displayStudentDetails();
         System.out.println("Title: "+ title);
         System.out.println("Research topic: "+ researchTopics);

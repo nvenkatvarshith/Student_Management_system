@@ -1,10 +1,12 @@
 package com.airtribe.studentmanagement.entity;
 
+//inheritance
 public class Student extends Person{
     private String studentId;
     private String studentProgram;
     private double studentGPA;
 
+    //constructor chaining
     public Student(String name,int age,String gender,String phoneNo,String email,String studentId,String studentProgram, double studentGPA){
         super(name,age,gender,phoneNo,email);
         this.studentId = studentId;
@@ -23,7 +25,6 @@ public class Student extends Person{
         System.out.println("Student ID: "+ studentId);
         System.out.println("Student Name: "+ super.getName());
         System.out.println("Student GPA: "+ studentGPA);
-        System.out.println("Student Email: " + super.getEmail());
     }
 
     public String getStudentId() {
