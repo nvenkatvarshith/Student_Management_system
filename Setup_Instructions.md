@@ -8,32 +8,32 @@
 
 1. Download JDK Installation file from the official website(Oracle)
 
-![Official Download Jdk from Oracle](images/jdk_install_step1.png)
+![Official Download Jdk from Oracle](images/setup/jdk_install_step1.png)
 
 2. Install JDK in the system
 
-    ![start installation](images/step2.png)
+    ![start installation](images/setup/step2.png)
 
 3. Select Installation directory and click next
 
-    ![select installation directory](images/step3.png) 
+    ![select installation directory](images/setup/step3.png) 
 
 4. Java installed succesfully
 
-![installed successfully](images/step4.png)
+![installed successfully](images/setup/step4.png)
 
 5. Open System properties -> go to the environment variables -> system variables -> edit Path -> add our java installed path
    System variable path is updated automatically during the installation - no need to update separately
 
-    ![environment variables](images/step5.png)
+    ![environment variables](images/setup/step5.png)
 
 6. Java is installed successfully, check java installed or not in command prompt 
 
-    ![installed successfully](images/step6.png)
+    ![installed successfully](images/setup/step6.png)
 
 7. Run an hello world program
 
-    ![Hello World](images/helloworld.png)
+    ![Hello World](images/setup/helloworld.png)
 
 javac - It is an utility program provided by java to do compilation - convertion of high level language to byte code(Intermediary code) - the byte code is understood by JVM.
 
